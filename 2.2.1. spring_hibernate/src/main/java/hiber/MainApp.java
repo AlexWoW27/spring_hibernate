@@ -39,7 +39,7 @@ public class MainApp {
         car1.setUser(user5);
         carService.add(car1);
 
-        List<User> users2 = userService.UserWithCar("Mazda",6);
+        List<User> users2 = userService.userWithCar("Mazda",6);
         for(User user : users2) {
             System.out.println(user.toString());
         }
@@ -53,7 +53,7 @@ public class MainApp {
         car2.setUser(user6);
         carService.add(car2);
 
-        List<User> users3 = userService.UserWithCar("BMW",5);
+        List<User> users3 = userService.userWithCar("BMW",5);
         for(User user : users3) {
             System.out.println(user.toString());
         }
@@ -66,7 +66,7 @@ public class MainApp {
         car3.setUser(user7);
         carService.add(car3);
 
-        List<User> users4 = userService.UserWithCar("Jiguli",5);
+        List<User> users4 = userService.userWithCar("Jiguli",5);
         for(User user : users4) {
             System.out.println(user.toString());
         }

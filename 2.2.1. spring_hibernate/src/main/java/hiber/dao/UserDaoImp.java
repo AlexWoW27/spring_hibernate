@@ -28,13 +28,9 @@ public class UserDaoImp implements UserDao {
     }
 
     @Override
-    public List<User> UserWithCar(String model, int series) {
+    public List<User> userWithCar(String model, int series) {
         return sessionFactory.openSession().createQuery("from User WHERE car.model = :model and car.series = :series")
                                 .setParameter("model",model).setParameter("series",series).list();
     }
-
-    //("from User user inner join user.car WHERE user.car.model = :model and user.car.series = :series")
-    //                .setParameter("model",model).setParameter("series",series)
-
 
 }
